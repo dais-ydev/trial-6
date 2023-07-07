@@ -1,0 +1,288 @@
+
+
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 100;
+
+  margin-bottom: 10px;
+
+  height: 64px;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color:rgb(11, 10, 13);
+
+  border-bottom-color: rgb(38, 38, 38);
+  border-bottom-width: 0.1mm;
+  border-bottom-style: solid;
+  
+
+
+}
+.left-side{/* LEFT SIDE STARTS HERE */
+  display: flex;
+  align-items: center;
+
+  background-color:rgb(11, 10, 13);
+
+  width: 510px;
+  height: 100%;
+}
+
+.menu-icon{
+  display: none;
+}
+
+.menu-icon-right{
+  display: none;
+}
+
+.logo-container{
+  display: flex;
+  align-items: center;
+
+  width: 150px;
+
+  margin-left: 15px;
+}
+
+.logo-image{
+  width: 125px;
+  margin-left: 10px;
+  
+}
+
+
+
+.menu-container{
+  flex: 1;
+  display: flex;
+
+  
+}
+
+.home-button, .latest-button, .manga-button, .webtoon-button{
+  flex: 1;
+  height: 100%;
+
+  padding: 10px;
+
+
+  color: rgb(209, 213, 219);
+  font-family: Roboto, Arial;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration-style: solid;
+
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(13, 10, 13);
+
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+  
+}
+
+.home-button:hover, .latest-button:hover, .manga-button:hover, .webtoon-button:hover{
+  color: white;
+  background-color: rgb(110, 58, 110);;
+
+  }
+/* END */
+
+
+
+
+.middle{ /* MIDDLE STARTS HERE */
+  position: relative;
+
+  flex: 1;
+
+  max-width: 550px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-right: 20px;
+  margin-left: 50px;
+
+  background-image: url(images/search\ bg\ image.svg);
+
+}
+
+
+.search-box{
+  flex: 1;
+
+  height: 38px;
+  width: 0;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+
+  font-size: 14px;
+  font-weight: 400;
+  font-family: Roboto, Arial;
+  color: rgb(212, 212, 212);
+
+  background-color: rgb(38, 38, 38);
+  border: none;
+  border-radius: 5px;
+
+}
+
+
+
+
+
+
+/* END */
+
+
+.right-side{ /* RIGHT-SIDE STARTS HERE */
+  display: flex;
+  align-items: center;
+  width: 170px;
+  
+  margin-right: 20px;
+
+
+
+}
+
+.Login-button, .Sign-up-button {
+  flex-shrink: 0;
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  
+  color: rgb(209, 213, 219);
+  font-family: Roboto, Arial;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration-style: solid;
+
+  border: none;
+  background-color: rgb(11, 10, 13);
+ 
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  transition: background-color 0.15s ease;
+
+  cursor: pointer;
+  
+}
+
+.Login-button:hover, .Sign-up-button:hover{ 
+  color: white;
+
+  border-radius: 5px;
+  background-color: rgb(110, 58, 110);;
+  
+  }
+
+
+
+  @media (max-width: 900px){
+
+    .left-side{
+      width: 180px;
+    }
+    .menu-icon{
+      display: none;
+    }
+
+    .logo-container{
+      margin-left: 20px;
+      margin-right: 50px;
+    }
+    .menu-container{
+      display: none;
+    }
+
+
+
+
+    .middle{
+      margin-left: 10px;
+    }
+   
+
+
+
+    
+    .right-side{
+      display: inline-block;
+      width: 60px;
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+
+    .right-side button{
+      display: none;
+    }
+
+    .menu-icon-right{
+      display: inline-block;
+    }
+
+
+  }
+
+  
+  @media (max-width: 500px){
+
+    .left-side{
+      width: 150px;
+    }
+
+    .menu-icon{
+      display: none;
+    }
+    .menu-container{
+      display: none;
+    }
+
+    .logo-container{
+      margin-left: 0px;
+    }
+   
+
+    .middle{
+      margin-left: 10px;
+    }
+
+
+
+
+
+    .right-side{
+      display: inline-block;
+      width: 60px;
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+
+    .right-side button{
+      display: none;
+    }
+    .menu-icon-right{
+      display: inline-block;
+    }
+
+
+    
+  }
+  

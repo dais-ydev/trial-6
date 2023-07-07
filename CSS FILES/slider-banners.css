@@ -1,0 +1,152 @@
+
+.section-container{
+
+  
+  background: url(background/background\ 2.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.noname{
+  display: flex;
+  align-items: center;
+
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.slider-wrapper{
+  display: flex;
+  position: relative;
+  
+  margin-left: 150px;
+  max-width: 700px;
+  height: 100%;
+
+  
+ 
+}
+
+ .slider{
+  height: 100%;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  
+
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+.slider img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  scroll-snap-align: start;
+}
+
+.slider-nav{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+
+ }
+
+
+
+.slider-nav a{
+  background-color: rgb(74, 77, 80);
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.slider-nav a:hover{
+  background-color: white;
+}
+
+
+#button1:target{
+  background-color: yellow;
+}
+
+
+.weeklyPopular{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  color: white;
+  font-family: Roboto, Arial;
+  width: 224px;
+  height: 308px;
+  
+  background-image: url(weeklyPopular/windBreaker.svg);
+  margin-left: 50px;
+  
+}
+
+.weeklyPopular p{
+  margin: 0;
+  margin-left: 20px;
+  
+}
+.intro-text{
+  padding-bottom: 20px;
+  font-size: 16px; 
+}
+
+.winner-title{
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.winner-author{
+  padding-top: 5px;
+  font-weight: 300;
+}
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
+  .weeklyPopular{
+    display: none;
+  }
+  .slider img{
+    object-fit: contain;
+  }
+  .slider-wrapper{
+    margin: 0 auto;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .banners{
+    display: none;
+  }
+  
+  .slider-wrapper{
+    max-width: 388px;
+    margin: 0 auto;
+  }
+  .slider img{
+    object-fit: contain;
+  }
+}

@@ -1,0 +1,17 @@
+.header-M{
+  display: none;
+}
+
+
+body{
+  margin: 0px;
+  background-color: rgb(11, 10, 13);
+  padding-top: 65px;
+  
+  
+  
+}
+
+.Mobile-body{
+  display: none;
+}

@@ -1,0 +1,62 @@
+    <div class="list-container">
+      <main class="grid-container">
+  
+        <div class="grid-upper">
+          Popular
+        </div>
+  
+        <div class="grid-lower">
+          <div class="comic-preview">
+  
+            <div class="upper-part">
+              <img src="Popular-list-image-preview/Wind Breaker.svg" alt="">
+            </div>
+      
+            <div class="lower-part">
+              <p class="title">Wind Breaker</p>
+              <p class="author">Yong Seok Jo</p>
+            </div>
+      
+          </div>
+      
+          <div class="comic-preview">
+      
+            <div class="upper-part">
+              <img src="Popular-list-image-preview/Wind Breaker.svg" alt="">
+            </div>
+      
+            <div class="lower-part">
+              <p class="title">Wind Breaker</p>
+              <p class="author">Yong Seok Jo</p>
+            </div>
+      
+          </div>
+          <div class="comic-preview">
+      
+            <div class="upper-part">
+              <img src="Popular-list-image-preview/Wind Breaker.svg" alt="">
+            </div>
+      
+            <div class="lower-part">
+              <p class="title">Wind Breaker</p>
+              <p class="author">Yong Seok Jo</p>
+            </div>
+      
+          </div>
+          <div class="comic-preview">
+      
+            <div class="upper-part">
+              <img src="Popular-list-image-preview/Wind Breaker.svg" alt="">
+            </div>
+      
+            <div class="lower-part">
+              <p class="title">Wind Breaker</p>
+              <p class="author">Yong Seok Jo</p>
+            </div>
+      
+          </div>
+        </div>
+  
+  
+      </main>
+    </div>

@@ -1,0 +1,101 @@
+.main-container{
+  background-color: rgb(11, 10, 13);
+
+  width: 100%;
+  color: white;
+}
+
+.main-wrapper{
+  margin: 0 auto;
+  display: flex;
+  background-color: lightgreen;
+  width: 1080px;
+  height: 100%;
+}
+
+.main-slider{
+  display: flex;
+  flex: 1;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.main-slider div{
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+}
+
+#page1{
+  padding-top: 10px;
+  background-color: rgb(11, 10, 13);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  column-gap: 20px;
+  row-gap: 30px;
+  justify-content: center;
+  
+  
+}
+
+.thumbnail{
+  
+  
+  width: 100%;
+}
+
+.thumbnail p{
+  font-family: Roboto, Arial;
+  margin: 0px;
+}
+.upper{
+  width: 100%;
+}
+.upper img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.lower{
+  margin-top: 0px;
+  padding-left: 5px;
+}
+
+.title{
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-left: 2px;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 12px;
+  
+  padding-left: 2px ;
+  color: rgb(96, 96, 96)
+}
+
+
+
+#page2{
+  background-color: rgb(90, 116, 202);
+}
+
+#page3{
+  background-color: rgb(196, 77, 166);
+}
+
+
+@media (max-width: 400px) {
+  .main-wrapper{
+    width: 100%;
+  }
+  #page1{
+    padding: 0px;
+    background-color: rgb(11, 10, 13);;
+    display: grid;
+    grid-template-columns: 160px 160px;
+    row-gap: 30px;
+    justify-content: center;
+    
+  }
+}
